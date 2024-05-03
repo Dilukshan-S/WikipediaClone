@@ -26,6 +26,12 @@ button{
     border: none;
     outline: none;
 }
+button:focus {
+    border: none;
+}
+button:focus .material-symbols-outlined {
+    border: none;
+}
 form span{
     color: blue;
 }
