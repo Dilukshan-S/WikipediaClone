@@ -1,3 +1,4 @@
+const search = document.querySelector("input");
 const form = document.querySelector("form");
 const searchResult = document.querySelector(".results");
 const errorMsg = document.querySelector(".alert");
@@ -10,9 +11,52 @@ form.addEventListener("submit",(e)=>{
     let searchvalue = search.value;
 
     if(searchvalue === ""){
-        errorMsg("Search cannot be empty. Please enter a search tearm.");
+        errorMessage("Search cannot be empty. Please enter a search tearm.");
     }
     else{
         getResult(searchvalue)
     }
-})
+});
+
+async function getResult(searchval){
+    const response = await fetch(apiURL + searchval);
+    const results = await response.json();
+    // javascript object notation
+
+    console.log(results);
+    if(results.query.search.length==0){
+            return errorMessage("Invalid search, please enter another search term.");
+        } else {
+                displayData(results);
+            }
+}
+
+// error Message
+function errorMessage(msg) {
+    errorMsg.style.display = "block";
+    line.style.display = "block";
+  
+    errorMsg.textContent = msg;
+  }
+
+  //display data
+  function displayData(results){
+    line.style.display="block";
+
+    let output="";
+    results.query.search.forEach((result) => {
+        let resultURL = `https://en.wikipedia.org/?curid=${result.pageid}`;
+
+        output += 
+        `   <div class="result p-1">
+            <a href="${resultURL}" target="_blank" class="h3 fw-bold">
+                ${result.title}
+            </a>
+            <br/>
+            <a href="${resultURL}" target="_blank" class="fs-5 text-success">${resultURL}</a>
+            <p class="fs-5">${result.snippet}</p>
+            </div> 
+        `;
+        searchResult.innerHTML=output;
+    });
+  }
