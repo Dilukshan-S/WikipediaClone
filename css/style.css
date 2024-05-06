@@ -28,8 +28,9 @@ button{
 }
 button:focus {
     border: none;
+
 }
-button:focus .material-symbols-outlined {
+button:focus .fas fa-search {
     border: none;
 }
 form span{
