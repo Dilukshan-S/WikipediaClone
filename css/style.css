@@ -4,20 +4,32 @@
     box-sizing: border-box;
     font-family: sans-serif;
 }
+.title{
+    position: absolute;
+    text-align: center;
+    height: 10vh;
+    width:95vw;
+    font-size: 40px;
+    margin-top: 10px;
+}
 p{
     font-size: 1.6rem;
     line-height: 1.5;
 }
 img{
+    position: relative;
+    top: 45px;
     width: 30%;
 }
 .container{
     max-width: 900px;
     margin: 0 auto;
     padding: 0 20px;
+    border: none;
 }
 form{
     position: relative;
+    top: 7px;
 }
 button{
     position: absolute;
@@ -38,4 +50,7 @@ form span{
 }
 .hide{
     display: none;
+}
+hr {
+    display: none !important;
 }
