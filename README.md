@@ -1,23 +1,59 @@
-Wikipedia Clone
+🧠 Wikipedia Clone
+A simple, responsive clone of Wikipedia built using HTML, CSS, JavaScript, and Bootstrap. This project replicates core functionalities of the original platform, allowing users to search and read summaries of articles from Wikipedia’s public API.
 
-This project is a simple Wikipedia clone built using HTML, JavaScript, CSS, and Bootstrap. It aims to replicate some of the basic functionalities and layout of the popular online encyclopedia, allowing users to browse and search for articles.
+✨ Features
+🔍 Live Search: Instantly search Wikipedia using keywords via the Wikipedia API.
 
-Features:
+📄 Dynamic Article Display: View article titles, snippets, and direct links.
 
-* Search Functionality: Users can search for articles using keywords.
-* Article Display: Articles are displayed in a clean and organized layout.
-* Responsive Design: The clone is designed to be responsive and accessible on various devices.
+💡 Responsive Design: Clean and mobile-friendly layout using Bootstrap.
 
-Technologies Used:
+⚡ Interactive UI: Smooth animations, transitions, and error handling for a seamless user experience.
 
-* HTML
-* JavaScript
-* CSS
-* Bootstrap
+⏳ Loading Spinner: Visual feedback while fetching data.
 
-How to Use:
+🛠️ Technologies Used
+HTML5
 
-1. Clone the repository to your local machine.
-2. Open the index.html file in your web browser.
-3. Start exploring the Wikipedia clone!
+CSS3
 
+JavaScript (ES6)
+
+Bootstrap 5
+
+Wikipedia REST API
+
+🚀 Getting Started
+To run the project locally:
+
+Clone the Repository
+
+bash
+Copy code
+git clone https://github.com/your-username/wikipedia-clone.git
+Navigate to the Folder
+
+bash
+Copy code
+cd wikipedia-clone
+Open in Browser
+
+Double-click index.html
+
+Or open it with Live Server in VS Code
+
+📸 Screenshots
+(Optional: Add a screenshot here of the UI in action)
+
+📦 Future Improvements
+Support for article preview or embedded content
+
+Voice search
+
+Recent search history
+
+Dark mode
+
+📄 License
+
+This project is open-source and available under the MIT License.
