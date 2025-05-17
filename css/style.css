@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.title{
+    position: absolute;
+    text-align: center;
+    height: 10vh;
+    width:95vw;
+    font-size: 40px;
+    margin-top: 10px;
+}
+p{
+    font-size: 1.6rem;
+    line-height: 1.5;
+}
+img{
+    position: relative;
+    top: 45px;
+    width: 30%;
+}
+.container{
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 20px;
+    border: none;
+}
+form{
+    position: relative;
+    top: 7px;
+}
+button{
+    position: absolute;
+    right: .2rem;
+    top: 0.4rem;
+    border: none;
+    outline: none;
+}
+button:focus {
+    border: none;
+
+}
+button:focus .fas fa-search {
+    border: none;
+}
+form span{
+    color: blue;
+}
+.hide{
+    display: none;
+}
+hr {
+    display: none !important;
+}
