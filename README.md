@@ -36,14 +36,7 @@ Navigate to the Folder
 bash
 Copy code
 cd wikipedia-clone
-Open in Browser
-
-Double-click index.html
-
-Or open it with Live Server in VS Code
-
-📸 Screenshots
-(Optional: Add a screenshot here of the UI in action)
+Open in Browser (Open the index.html file in a web browser)
 
 📦 Future Improvements
 Support for article preview or embedded content
