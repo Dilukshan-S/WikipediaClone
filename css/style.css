@@ -54,3 +54,54 @@ form span{
 hr {
     display: none !important;
 }
+/* Fade-in animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.result {
+  animation: fadeIn 0.4s ease forwards;
+}
+
+/* Button hover effect */
+button.btn {
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+button.btn:hover {
+  transform: scale(1.1);
+  background-color: #198754; /* Bootstrap success */
+  color: white;
+}
+
+/* Error alert animation */
+.alert {
+  transition: opacity 0.3s ease;
+  opacity: 1;
+}
+.alert.hide {
+  opacity: 0;
+}
+
+/* Show the horizontal rule line with fade */
+hr {
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+hr.show {
+  opacity: 1;
+}
+
+.loader {
+  border: 6px solid #f3f3f3;
+  border-top: 6px solid #198754;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 0.8s linear infinite;
+  margin: 1rem auto;
+}
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
