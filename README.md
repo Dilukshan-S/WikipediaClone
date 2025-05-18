@@ -1,3 +1,5 @@
+Live preview aviailable from: https://dilukshan-s.github.io/WikipediaClone/
+
 🧠 Wikipedia Clone
 A simple, responsive clone of Wikipedia built using HTML, CSS, JavaScript, and Bootstrap. This project replicates core functionalities of the original platform, allowing users to search and read summaries of articles from Wikipedia’s public API.
 
