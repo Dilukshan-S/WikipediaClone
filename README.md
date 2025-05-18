@@ -8,7 +8,7 @@ A simple, responsive clone of Wikipedia built using HTML, CSS, JavaScript, and B
 
 📄 Dynamic Article Display: View article titles, snippets, and direct links.
 
-💡 Responsive Design: Clean and mobile-friendly layout using Bootstrap.
+🎨 Dynamic Background Color: Background color changes on each page refresh for a fresh visual
 
 ⚡ Interactive UI: Smooth animations, transitions, and error handling for a seamless user experience.
 
